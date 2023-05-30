@@ -1,0 +1,7 @@
+services:
+  resume:
+    build: .
+    ports:
+      - "80:5000"
+    volumes:
+      - .:/app
