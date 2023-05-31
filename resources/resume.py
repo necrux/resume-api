@@ -20,6 +20,11 @@ class Resume(MethodView):
     def get(self):
         return resume
 
+    def delete(self):
+        global resume
+        resume = {}
+        return resume
+
 
 @blp.route("/resume/refresh")
 class Refresh(MethodView):
